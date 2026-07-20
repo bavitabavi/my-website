@@ -1,0 +1,162 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:white;
+    color:black;
+    transition:.4s;
+}
+
+header{
+    background:blue;
+    color:white;
+    position:sticky;
+    top:0;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+nav button{
+    border:none;
+    background:white;
+    padding:8px 12px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.hero{
+    text-align:center;
+    padding:70px 20px;
+}
+
+.hero img{
+    border-radius:50%;
+    width:180px;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:45px;
+}
+
+.hero h3{
+    margin:15px;
+    color:blue;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    background:blue;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:5px;
+}
+
+section{
+    padding:60px 10%;
+}
+
+section h2{
+    margin-bottom:30px;
+    text-align:center;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.timeline .item{
+    background:white;
+    margin:20px 0;
+    padding:20px;
+    border-left:5px solid blue;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+footer{
+    background:blue;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.dark{
+    background:black;
+    color:white;
+}
+
+.dark .card,
+.dark .timeline .item{
+    background:black;
+    color:white;
+}
+
+.dark .btn{
+    background:orange;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-direction:column;
+    margin-top:20px;
+}
+
+nav ul li{
+    margin:10px 0;
+}
+
+.hero h1{
+    font-size:32px;
+}
+
+}
